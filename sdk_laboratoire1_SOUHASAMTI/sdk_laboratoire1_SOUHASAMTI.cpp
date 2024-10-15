@@ -2,9 +2,12 @@
 //
 
 #include <iostream>
+#include "LibrairieConversionNote.h"
 
 int main()
 {
+    LibrairieConversionNote conversion;
+    conversion.Transformer("");
     std::cout << "Hello World!\n";
 }
 

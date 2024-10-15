@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="LibrairieConversionNote.cpp" />
     <ClCompile Include="sdk_laboratoire1_SOUHASAMTI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LibrairieConversionNote.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
