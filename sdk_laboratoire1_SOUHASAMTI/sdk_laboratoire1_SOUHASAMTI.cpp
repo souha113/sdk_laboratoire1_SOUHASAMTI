@@ -7,8 +7,8 @@
 int main()
 {
     LibrairieConversionNote conversion;
-    conversion.Transformer("");
-    std::cout << "Hello World!\n";
+    conversion.DemanderEtAfficherNote();
+    return 0;
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

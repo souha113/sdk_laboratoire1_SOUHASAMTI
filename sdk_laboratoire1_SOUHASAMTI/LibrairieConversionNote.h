@@ -3,6 +3,7 @@
 class LibrairieConversionNote
 {
 public:
-	std::string Transformer(std::string alpha);
+	LibrairieConversionNote();
+	void DemanderEtAfficherNote();
 };
 
