@@ -13,7 +13,7 @@ int main()
    
     while (true) 
     {
-        std::cout << "Quel type de conversion voulez-vous faire ? (Tapez 'NOTE' pour alphabétique vers note ";
+        std::cout << "Quel type de conversion voulez-vous faire ? Tapez 'NOTE' pour alphabetique vers note ";
         std::getline(std::cin, conversionType);
         if (conversionType == "NOTE")
         {
