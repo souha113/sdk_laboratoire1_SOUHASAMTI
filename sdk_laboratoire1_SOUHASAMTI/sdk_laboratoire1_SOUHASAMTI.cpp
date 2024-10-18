@@ -9,19 +9,22 @@ int main()
 {
     LibrairieConversionNote conversion;
     char c;
-
-    while (true) {
-        printf_s("Tapez une lettre (A a G) ou 'X' pour quitter : ");
-        scanf_s(" %c", &c); 
-
-        if (c == 'X') {
-            printf_s("Programme termine.\n");
-            break; 
-        }
-
-        
+    std::string conversionType;
+   
+    while (true) 
+    {
+        std::cout << "Quel type de conversion voulez-vous faire ? (Tapez 'NOTE' pour alphabétique vers note ";
+        std::getline(std::cin, conversionType);
+        if (conversionType == "NOTE")
+        {
+        while (true) 
+        {
+            std::cout << "Tapez une lettre (A a G) : ";
+        std::cin >> c;
         std::string note = conversion.Transformer(c); 
-        printf_s("%s\n", note.c_str()); 
+        std::cout << "La note est " << note.c_str() << std::endl;
+        }
+        }
     }
 
     return 0;
