@@ -3,11 +3,27 @@
 
 #include <iostream>
 #include "LibrairieConversionNote.h"
+#include <cstdio>
 
 int main()
 {
     LibrairieConversionNote conversion;
-    conversion.DemanderEtAfficherNote();
+    char c;
+
+    while (true) {
+        printf_s("Tapez une lettre (A a G) ou 'X' pour quitter : ");
+        scanf_s(" %c", &c); 
+
+        if (c == 'X') {
+            printf_s("Programme termine.\n");
+            break; 
+        }
+
+        
+        std::string note = conversion.Transformer(c); 
+        printf_s("%s\n", note.c_str()); 
+    }
+
     return 0;
 }
 
